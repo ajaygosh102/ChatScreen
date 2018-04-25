@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".spinner">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/rounded_corner1"
+            android:layout_height="30dp">
+            <Spinner
+
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            </Spinner>
+        </RelativeLayout>
+
+
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:id="@+id/movies_list"
+        android:dividerHeight="5dp"
+        android:padding="5dp"
+        android:divider="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatscreen.chatactivity">
+
+
+    <!-- <ListView
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:id="@+id/chatscreen"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <android.support.v7.widget.RecyclerView
+
+
+        android:id="@+id/chatscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5">
+
+            <at.markushi.ui.CircleButton
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_name"
+                app:cb_color="@color/colorPrimary"
+                app:cb_pressedRingWidth="0dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:background="@drawable/roundco"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#0000"
+                android:backgroundTint="#fff"
+                android:gravity="center_vertical"
+                android:hint="Type here..."
+                android:maxLines="4"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4">
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="36dp"
+
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/telegram"
+                app:cb_color="#0080A9"
+                app:cb_pressedRingWidth="0dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4">
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="56dip"
+
+                android:layout_height="56dip"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/microphone"
+                app:cb_color="#0080A9"
+                app:cb_pressedRingWidth="4dip" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
